@@ -1,0 +1,16 @@
+Write a program that dynamically allocates an array large enough to hold a user-defined number of test scores.  Once all of the scores are entered, the array should be passed to a function (which you should write) that sorts them in ascending order.  Another function (again, one that you should write) should be called that calculates the average score.  The program should then display the sorted list of scores and the average with appropriate headings.  Use pointer notation rather than array notation whenever possible.
+When finished with the array, use the delete operator to de-allocate the array.
+
+Input Validation: Do not accept negative test scores
+
+Demonstrate this validation in your sample output.
+
+ 
+Modify the program above to allow the user to enter name-score pairs (use a class).  For each student taking the test, the user should enter a string representing name of the student, followed by an integer representing the student's score.  Modify both the sorting and average-calculating functions so they take arrays of objects, with each object containing the name and score of a single student.  In traversing the arrays, use pointers rather than array indices.
+When finished with the array, use the delete operator to de-allocate the array.
+
+Include a class definition for a student, including a constructor, getters and setters for the name and score, and a destructor.
+
+ 
+In statistics, the mode of a set of values is the value that occurs most often.  Write a program that determines how many pieces of pie most people eat in a year.  Set up a dynamically-allocated integer array that can hold responses from 30 people.  For each person, enter the number of pieces they say they eat in a year.  Then write a function that finds the mode of those 30 values (this will be the number of pie slices eaten by the most people).  The function that finds and returns the mode should accept two arguments, an array of integers, and a value indicating how many elements are in the array.
+One possible approach is to sort the array after all responses have been entered.  Scan the array, counting the number of times each response occurs consecutively in the array.  Print the responses in sorted order to make verification easier.
